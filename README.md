@@ -1,27 +1,24 @@
 # LuckyYou
 Ethereum Smart Contract for Campaings
 
-This project is another learning opportunity on how to build smart contracts and understanding limitations on the Solidity programming language. Main idea is, awarding consumers under the campaign. Companys like Pepsi, Magnum makes campaign evert year and give some awards to consumers. We will store products products barcode number with hashing. If not barcode will be seen by people
+This project is another learning opportunity on how to build smart contracts and understanding limitations on the Solidity programming language. Main idea is, give award to consumers for a specific campaign. 
+
+Used token is a sample of MintableToken. 
 
 There are three roles on this contract.
 
-1. Company :Start a new campaign and decide product count. Also can change awardAmount(coin).
+1. Company :Register, LoadBalance (spend ether get coin) AddProduct and AddBarcode. 
+     function registerCompany(string _companyName, string _email) public
+     function loadBalanceToCompany() public payable returns (uint256)
+     function addProduct (uint32 _productId, uint32 _duration, uint32 _promotionCount) public returns (uint32)
+     function addBarcode(uint32 _productId, uint32 _barcodeNumber, uint32 _rewardAmount) payable returns(bool)
 
-2. Consumers : After getting product consumers will enter the products barcode number to system. If exist they win some coin, may be ether.
+2. Consumers : After getting product consumers will enter the products barcode number to system. If exist they win some coin.
+            function checkBarcode(uint32 _productId, uint32 _barcodeNumber)  public payable returns(uint32)
 
-3. Owner: Add, delete company. Change coin supply.
+3. Owner: Change adding barcode fee. Get ether for giving coin to company.
 
-    event insertCompanyEvent(uint32 _companyId);
     
-    event insertProductEvent(uint32 _companyId, uint32 _productId);
-    
-    event insertBarcodeEvent(address _companyAddress, uint32 _companyId, uint32 _productId, uint32 _barcodeNumber);
-    
-    event checkBarcodeEvent(address _checkerAddress, uint32 _companyId, uint32 _productId, uint32 _barcodeNumber);
-    
-    event userWonEvent(address _checkerAddress, uint32 _companyId, uint32 _productId, uint32 _barcodeNumber, uint32 _coinAmount);
-
-
 Please provide comments and improvements as this project is a learning opportunity. 
 
 
