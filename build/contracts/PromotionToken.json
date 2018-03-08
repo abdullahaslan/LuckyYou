@@ -392,14 +392,14 @@
     "absolutePath": "/E/play/Ethereum/Project/LuckyYou/contracts/token/PromotionToken.sol",
     "exportedSymbols": {
       "PromotionToken": [
-        645
+        630
       ]
     },
-    "id": 646,
+    "id": 631,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 632,
+        "id": 617,
         "literals": [
           "solidity",
           "^",
@@ -412,10 +412,10 @@
       {
         "absolutePath": "zeppelin-solidity/contracts/token/ERC20/MintableToken.sol",
         "file": "zeppelin-solidity/contracts/token/ERC20/MintableToken.sol",
-        "id": 633,
+        "id": 618,
         "nodeType": "ImportDirective",
-        "scope": 646,
-        "sourceUnit": 1066,
+        "scope": 631,
+        "sourceUnit": 1051,
         "src": "28:67:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -426,51 +426,51 @@
             "arguments": [],
             "baseName": {
               "contractScope": null,
-              "id": 634,
+              "id": 619,
               "name": "MintableToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1065,
+              "referencedDeclaration": 1050,
               "src": "126:13:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MintableToken_$1065",
+                "typeIdentifier": "t_contract$_MintableToken_$1050",
                 "typeString": "contract MintableToken"
               }
             },
-            "id": 635,
+            "id": 620,
             "nodeType": "InheritanceSpecifier",
             "src": "126:13:1"
           }
         ],
         "contractDependencies": [
-          799,
-          895,
-          938,
-          970,
-          1065,
-          1311
+          784,
+          880,
+          923,
+          955,
+          1050,
+          1296
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 645,
+        "id": 630,
         "linearizedBaseContracts": [
-          645,
-          1065,
-          799,
-          1311,
-          895,
-          938,
-          970
+          630,
+          1050,
+          784,
+          1296,
+          880,
+          923,
+          955
         ],
         "name": "PromotionToken",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 638,
+            "id": 623,
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 645,
+            "scope": 630,
             "src": "143:46:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -479,7 +479,7 @@
               "typeString": "string memory"
             },
             "typeName": {
-              "id": 636,
+              "id": 621,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "143:6:1",
@@ -491,7 +491,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "50726f6d6f74696f6e546f6b656e",
-              "id": 637,
+              "id": 622,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -510,10 +510,10 @@
           },
           {
             "constant": true,
-            "id": 641,
+            "id": 626,
             "name": "symbol",
             "nodeType": "VariableDeclaration",
-            "scope": 645,
+            "scope": 630,
             "src": "193:38:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -522,7 +522,7 @@
               "typeString": "string memory"
             },
             "typeName": {
-              "id": 639,
+              "id": 624,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "193:6:1",
@@ -534,7 +534,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "50524f43",
-              "id": 640,
+              "id": 625,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -553,10 +553,10 @@
           },
           {
             "constant": true,
-            "id": 644,
+            "id": 629,
             "name": "decimals",
             "nodeType": "VariableDeclaration",
-            "scope": 645,
+            "scope": 630,
             "src": "235:34:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -565,7 +565,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 642,
+              "id": 627,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "235:4:1",
@@ -577,7 +577,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3138",
-              "id": 643,
+              "id": 628,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -595,7 +595,7 @@
             "visibility": "public"
           }
         ],
-        "scope": 646,
+        "scope": 631,
         "src": "99:182:1"
       }
     ],
@@ -605,14 +605,14 @@
     "absolutePath": "/E/play/Ethereum/Project/LuckyYou/contracts/token/PromotionToken.sol",
     "exportedSymbols": {
       "PromotionToken": [
-        645
+        630
       ]
     },
-    "id": 646,
+    "id": 631,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 632,
+        "id": 617,
         "literals": [
           "solidity",
           "^",
@@ -625,10 +625,10 @@
       {
         "absolutePath": "zeppelin-solidity/contracts/token/ERC20/MintableToken.sol",
         "file": "zeppelin-solidity/contracts/token/ERC20/MintableToken.sol",
-        "id": 633,
+        "id": 618,
         "nodeType": "ImportDirective",
-        "scope": 646,
-        "sourceUnit": 1066,
+        "scope": 631,
+        "sourceUnit": 1051,
         "src": "28:67:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -639,51 +639,51 @@
             "arguments": [],
             "baseName": {
               "contractScope": null,
-              "id": 634,
+              "id": 619,
               "name": "MintableToken",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1065,
+              "referencedDeclaration": 1050,
               "src": "126:13:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_MintableToken_$1065",
+                "typeIdentifier": "t_contract$_MintableToken_$1050",
                 "typeString": "contract MintableToken"
               }
             },
-            "id": 635,
+            "id": 620,
             "nodeType": "InheritanceSpecifier",
             "src": "126:13:1"
           }
         ],
         "contractDependencies": [
-          799,
-          895,
-          938,
-          970,
-          1065,
-          1311
+          784,
+          880,
+          923,
+          955,
+          1050,
+          1296
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 645,
+        "id": 630,
         "linearizedBaseContracts": [
-          645,
-          1065,
-          799,
-          1311,
-          895,
-          938,
-          970
+          630,
+          1050,
+          784,
+          1296,
+          880,
+          923,
+          955
         ],
         "name": "PromotionToken",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 638,
+            "id": 623,
             "name": "name",
             "nodeType": "VariableDeclaration",
-            "scope": 645,
+            "scope": 630,
             "src": "143:46:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -692,7 +692,7 @@
               "typeString": "string memory"
             },
             "typeName": {
-              "id": 636,
+              "id": 621,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "143:6:1",
@@ -704,7 +704,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "50726f6d6f74696f6e546f6b656e",
-              "id": 637,
+              "id": 622,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -723,10 +723,10 @@
           },
           {
             "constant": true,
-            "id": 641,
+            "id": 626,
             "name": "symbol",
             "nodeType": "VariableDeclaration",
-            "scope": 645,
+            "scope": 630,
             "src": "193:38:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -735,7 +735,7 @@
               "typeString": "string memory"
             },
             "typeName": {
-              "id": 639,
+              "id": 624,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "193:6:1",
@@ -747,7 +747,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "50524f43",
-              "id": 640,
+              "id": 625,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -766,10 +766,10 @@
           },
           {
             "constant": true,
-            "id": 644,
+            "id": 629,
             "name": "decimals",
             "nodeType": "VariableDeclaration",
-            "scope": 645,
+            "scope": 630,
             "src": "235:34:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -778,7 +778,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 642,
+              "id": 627,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "235:4:1",
@@ -790,7 +790,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "3138",
-              "id": 643,
+              "id": 628,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -808,7 +808,7 @@
             "visibility": "public"
           }
         ],
-        "scope": 646,
+        "scope": 631,
         "src": "99:182:1"
       }
     ],
@@ -820,5 +820,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.0",
-  "updatedAt": "2018-03-07T20:39:07.792Z"
+  "updatedAt": "2018-03-08T20:23:52.270Z"
 }
