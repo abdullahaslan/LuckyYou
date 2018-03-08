@@ -21,11 +21,7 @@ contract Promotions is Ownable {
 
     MintableToken token;
     
-    event AddCompanyEvent();
-    event LoadBalanace(uint256 _balance);
     event AddProductEvent(address _companyAddress, uint32 _productId);
-    event AddBarcodeEvent(address _companyAddress, uint32 _productId, uint32 _barcodeNumber);
-    event CheckBarcodeEvent(address _checkerAddress, uint32 _productId, uint32 _barcodeNumber);
     event UserWonEvent(address _checkerAddress, uint32 _productId, uint32 _barcodeNumber, uint32 _coinAmount);
   
     enum Status { Registered, Payed, Stopped }
@@ -125,7 +121,7 @@ contract Promotions is Ownable {
 
         productMap[_productId] = newProduct;
         products.push(newProduct);
-
+        AddProductEvent(msg.sender, _productId);
         return 1;
     }
 
@@ -172,7 +168,7 @@ contract Promotions is Ownable {
             productUpdate.promotionCount = productUpdate.promotionCount-1;
             
             token.transferFrom(productUpdate.companyAddress, msg.sender, luckyBarcode.rewardAmountInWei);            
-            
+            UserWonEvent(msg.sender, _productId, _barcodeNumber, luckyBarcode.rewardAmountInWei);
             return 1;
         }        
         return 0;
