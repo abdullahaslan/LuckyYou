@@ -71,14 +71,13 @@ contract Promotions is Ownable {
     }
 
     function finishCampaign(uint32 _productId) public
-    {
-        if (productMap[_productId].productId == _productId) revert();                
-        if (companyMap[msg.sender].balance == 0) revert();
+    {        
+        if (productMap[_productId].companyAddress != msg.sender) revert();
+        if (productMap[_productId].productId == _productId) revert(); 
 
         product storage productUpdate  = productMap[_productId];
         productUpdate.status = AvaliableStatus.Passive;
         productMap[_productId] = productUpdate;
-
     }   
 
     function registerCompany() public 
