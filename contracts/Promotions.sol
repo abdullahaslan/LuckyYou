@@ -6,8 +6,8 @@
 pragma solidity ^0.4.17;
 
 import "./token/PromotionToken.sol";
-import "zeppelin-solidity/contracts/token/ERC20/MintableToken.sol";
-import "zeppelin-solidity/contracts/ownership/Ownable.sol";
+import "./zeppelin/MintableToken.sol";
+import "./zeppelin/Ownable.sol";
 
 
 contract Promotions is Ownable {    
@@ -121,7 +121,7 @@ contract Promotions is Ownable {
 
         productMap[_productId] = newProduct;
         products.push(newProduct);
-        AddProductEvent(msg.sender, _productId);
+        emit AddProductEvent(msg.sender, _productId);
         return 1;
     }
 
@@ -168,7 +168,7 @@ contract Promotions is Ownable {
             productUpdate.promotionCount = productUpdate.promotionCount-1;
             
             token.transferFrom(productUpdate.companyAddress, msg.sender, luckyBarcode.rewardAmountInWei);            
-            UserWonEvent(msg.sender, _productId, _barcodeNumber, luckyBarcode.rewardAmountInWei);
+            emit UserWonEvent(msg.sender, _productId, _barcodeNumber, luckyBarcode.rewardAmountInWei);
             return 1;
         }        
         return 0;
