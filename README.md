@@ -17,7 +17,7 @@ There are three roles on this contract.
       ```
 
 2. Consumers: After getting product consumers will enter the products barcode number to system. If exist they win some coin.
-       ```sh
+     ```sh
      function checkBarcode(uint32 _productId, uint32 _barcodeNumber)  public payable returns(uint32)
       ```
      
